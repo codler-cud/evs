@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-display: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F7F9F6;
+    color: #14231B;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom scrollbar and Leaflet z-index harmony */
+.leaflet-container {
+  font-family: var(--font-sans);
+  z-index: 10;
+}
+
+.ecosort-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2EAE3;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(20, 35, 27, 0.04), 0 6px 20px rgba(27, 67, 50, 0.03);
+}
+
+.ecosort-card-hover {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.ecosort-card-hover:hover {
+  transform: translateY(-2px);
+  border-color: #B7D5C1;
+  box-shadow: 0 8px 24px rgba(27, 67, 50, 0.08);
+}

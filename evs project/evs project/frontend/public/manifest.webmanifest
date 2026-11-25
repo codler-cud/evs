@@ -1,0 +1,16 @@
+{
+  "name": "EcoSort — Waste Segregation & Recycling Awareness",
+  "short_name": "EcoSort",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F9F6",
+  "theme_color": "#1B4332",
+  "description": "Identify waste, find the right bin, locate recycling centres, and track responsible disposal habits.",
+  "icons": [
+    {
+      "src": "/ecosort-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
